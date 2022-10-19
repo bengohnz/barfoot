@@ -1,0 +1,13 @@
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  'event': 'contact',
+  'event_info': {
+    'content_type': '{{CONTENT_TYPE}}',     // The type of content, ie "Property", "Agent", "Branch", "Account"
+    'method': '{{METHOD}}',           // The method used, eg "Call", "Email", "Message", "Save"
+    'item_id': '{{ITEM_ID}}',         // The ID of the property
+    'item_name': {{ITEM_NAME}},       // The name of the property
+    'agent_id': '{{AGENT_ID}}',       // The agent ID (if multiple agents, pass a comma delimited string of IDs)
+    'branch_id': '{{BRANCH_ID}}',     // The Branch ID
+    'property_category': '{{PROPERTY_CATEGORY}}' // The category of property ie "Residential Sold", "Residential For Sale", "Residential For Rent", "Rural For Sale"
+  }
+});
