@@ -1,0 +1,10 @@
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  'event': 'save_this_search',
+  'event_info': {
+    'property_category': '{{PROPERTY_CATEGORY}}' // The category of properties filtered. i.e. "Commercial For lease", "Residential For Sale"
+    'region': '{{REGION}}',                      // The region of the properties filtered.
+    'property_type': '{{PROPERTY_TYPE}}',        // The type of properties filtered. i.e. "Apartment", Unit"
+    'keyword': '{{KEYWORD}}',                    // The keyword filters applied. If multiple, pass as CSV
+  }
+});
